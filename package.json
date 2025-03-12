@@ -1,0 +1,32 @@
+{
+    "name": "membership-backend",
+    "version": "1.0.0",
+    "description": "membership app backend",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "nodemon": "nodemon --env-file=.env index.js",
+        "dev": "node --watch --trace-warnings --env-file=.env index.js",
+        "check": "prettier --check .",
+        "format": "prettier --write ."
+    },
+    "author": "Farirai Masocha",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
+        "helmet": "^8.0.0",
+        "joi": "^17.13.3",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.10.0",
+        "multer": "^1.4.5-lts.1",
+        "mutter": "^1.0.1",
+        "nodemailer": "^6.10.0",
+        "nodemon": "^3.1.9",
+        "pesepay": "^1.0.4",
+        "pesepay-js": "^1.0.13",
+        "prettier": "^3.5.0"
+    }
+}
