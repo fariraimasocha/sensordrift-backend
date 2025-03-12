@@ -21,7 +21,7 @@ const sendSensorDriftAlert = async (sensorData, apiData, differences) => {
     try {
         const mailOptions = {
             from: process.env.MAIL_USER,
-            to: process.env.MAIL_USER, // You can change this to your target email
+            to: process.env.MAIL_RECEIVER, // You can change this to your target email
             subject: 'ALERT: Sensor Drift Detected',
             html: `
                 <h2>Sensor Drift Alert</h2>
